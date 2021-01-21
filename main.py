@@ -55,7 +55,7 @@ class Lotto:
 
         lefttoolbar = Frame(root, bg="grey")
 
-        self.infonumber = Label(lefttoolbar, text="Hear put your happy numbers", padx=10, pady=2, bg="grey")
+        self.infonumber = Label(lefttoolbar, text="Here put your happy numbers", padx=10, pady=2, bg="grey")
         self.infonumber.pack()
 
         self.firstnumber = Label(lefttoolbar, text="'1'", padx=10, pady=2)
@@ -218,13 +218,12 @@ class Lotto:
 
     def Info(self):
         self.canvas.delete(ALL)
-        self.canvas.create_text(198, 50, text="Gra napisana na potrzebę nauki Krystiana czyli mnie xD")
+        self.canvas.create_text(198, 50, text="Gra napisana na potrzebę nauki podstaw modułu tkinter")
 
     def HowtoPlay(self):
         self.canvas.delete(ALL)
         self.canvas.create_text(198, 50, text="How to play?")
-        self.canvas.create_text(198, 80, text="""Jakbyś czegoś nie wiedział to dzwoń do twórcy,
-        numer masz w telefionie Pawle xD""", justify=CENTER)
+        self.canvas.create_text(198, 80, text="""That is easy program, i believe in you!""", justify=CENTER)
 
 # --------------------------- Wywołanie programu ---------------------------
 root = Tk()
